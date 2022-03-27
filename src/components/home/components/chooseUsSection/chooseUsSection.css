@@ -5,68 +5,37 @@
   display: flex;
   background-size: 18% 100%;
   background-position: right;
-  background-image: url("../../asserts/globpx.svg");
+  /* background-image: url("../../../../asset-img/globpx.svg"); */
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.cs-upper {
-  margin-left: 55px;
-  margin-right: 55px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cs-upper h1 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: inherit;
-  width: 45%;
-}
-
-.cs-upper p {
-  padding-top: 20px;
-  width: 50%;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #1a1a1a;
-}
-
 .cs-lower {
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 30px;
   display: flex;
 }
 
 .cs-lower-text {
   display: flex;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
+  padding: 60px;
 }
 
-.cs-lower-image-back {
-  position: relative;
-  top: -82px;
-  left: 75%;
-  width: 350px;
-  height: 530px;
+.cs-lower-card1 {
+  padding: 4px;
+  margin: 20px;
+  margin-left: 120px;
+  width: 40%;
   display: flex;
-  align-items: flex-end;
-  /* background-image: url('../../asserts/kidback.png'); */
+  max-height: 160px;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
 
-.cs-lower-image {
-  width: 330px;
-  height: 560px;
-  background-image: url("../../asserts/globpx.svg");
-}
-
-.cs-lower-card {
+.cs-lower-card2 {
   padding: 2px;
   margin: 20px;
   width: 40%;
@@ -75,6 +44,23 @@
   align-items: center;
   margin-bottom: 40px;
   justify-content: space-between;
+}
+
+.cs-lower-card3 {
+  padding: 15px;
+  margin: 20px;
+  margin-left: 450px;
+  width: 40%;
+  display: flex;
+  max-height: 160px;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+div .cs-lower-card1,div .cs-lower-card2,div .cs-lower-card3{
+  border: 1px dashed black;
+  border-radius: 10px;
 }
 
 .cs-lower-text {
@@ -219,7 +205,7 @@
     background-position-x: 77vw;
     background-repeat: no-repeat;
     /* background-position: right; */
-    background-image: url("../../asserts/globpx.svg");
+    background-image: url("../../../../asset-img/globpx.svg");
   }
 
   .cs-upper h1 {
@@ -300,7 +286,7 @@
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 760px) {
   .cs-body {
     background-image: none;
     margin-bottom: 20px;

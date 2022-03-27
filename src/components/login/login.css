@@ -91,7 +91,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: linear-gradient(45deg, #FCE4BD, #FCE4BD);
+    background: #1B2C87;
     border-radius: 50% 0 0 50%;
     transform: scaleY(1.1);
     z-index: -1;
@@ -107,7 +107,7 @@
     width: 58%;
     letter-spacing: 6px;
     font-size: 23px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -262,6 +262,11 @@ h4 {
     width: 100%;
 }
 
+.right-signin h3{
+    color: indigo;
+}
+
+
 /* RIGHT SIDE OF LOGIN PAGE */
 
 .right-signin {
@@ -274,14 +279,18 @@ h4 {
     width: 58%;
     letter-spacing: 6px;
     font-size: 23px;
-    color: black;
+    color: white;
     text-align: center;
 }
 
 .form h5 {
-    color: indigo;
+    color:#9f1dd7 ;
     font-size: 17px;
     cursor: pointer;
+}
+
+.right-signup h3{
+    color: indigo;
 }
 
 /*login with socail icon */

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./login.css";
 import validateInfo from "./validate";
 import validationInfo from "./validation";
-import image from "./signup.png";
-import image_1 from "./login.jpeg";
+import image from "./images/signup.png";
+import image_1 from "./images/login.jpeg";
 import { useHistory } from "react-router";
 import { axioss } from "../api/api";
 
@@ -111,8 +111,10 @@ function Login() {
   return (
     <div className="login">
       <div className={click ? "-container" : "-container onclick"}>
+
         {/* left-part section  */}
         <div className="left">
+
           {/* left-part signup section  */}
           <div className="left-signup">
             <h1>WELCOME TO</h1>
@@ -120,9 +122,10 @@ function Login() {
             <div className="image">
               <img src={image} alt="" />
             </div>
-            <h3>LET'S GET STARTED</h3>
+            {/* <h3>LET'S GET STARTED</h3> */}
           </div>
           {/* left-part signup section  */}
+
           {/* left-part signin section  */}
           <div className="left-signin">
             <div className="image">
@@ -133,10 +136,13 @@ function Login() {
             </div>
           </div>
           {/* left-part signin section  */}
+
         </div>
         {/* left-part section  */}
+
         {/* right-part section  */}
         <div className="right">
+          
           {/* right-part signup section  */}
           <div className="right-signup">
             <h1>CREATE AN ACCOUNT</h1>

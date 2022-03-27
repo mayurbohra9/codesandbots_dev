@@ -1,22 +1,20 @@
 import React from "react";
 import "./App.css";
-import Product from "./components/product/product";
-// import Headbar from "./components/header/Header";
+import ReactGA from "react-ga";
+import { Redirect } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Product from "./components/product/product";
 import Item from "./components/buy-now/Item";
 import Login from "./components/login/login";
-import Fetchdata from "./components/api/api";
 import { ShippingPage } from "./components/Shipping_progress/shippingPage/ShippingPage";
 import { Navbar } from "./components/Shipping_progress/Navbar/Navbar";
 import Home from "./components/home/home";
 import Register from "./components/Register_page/Register";
-import ReactGA from "react-ga";
 import ContentPage from "./components/content-page/App";
 import Header from "./components/content-page/component/header/header";
 import LearnInSchool from "./components/learnInSchool/LearnInSchool";
 import PrivateRoute from "./components/privateRoute/privateRoute";
-import { Redirect } from "react-router-dom";
-// import Modal from "./components/register_modal/Modal";
 
 function initizeAnalytics() {
   ReactGA.initialize("UA-211874757-1");
@@ -29,7 +27,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <PrivateRoute
+
+          <PrivateRoute 
             path="/e-commerce"
             component={(props) => {
               return (
@@ -40,6 +39,7 @@ function App() {
               );
             }}
           />
+
           <PrivateRoute
             path="/main-page"
             component={(props) => {
@@ -51,6 +51,7 @@ function App() {
               );
             }}
           />
+
           <PrivateRoute
             path="/shipping_page"
             component={(props) => {
@@ -63,22 +64,27 @@ function App() {
               );
             }}
           />
-          <Route path="/sign-in" exact>
-            <Login />
-          </Route>
+
           <Route path="/" exact>
             <Home />
-          </Route>
-          <Route path="/register" exact>
-            <Header />
-            <Register />
           </Route>
           <Route path="/home" exact>
             <Home />
           </Route>
+
+          <Route path="/sign-in" exact>
+            <Login />
+          </Route>         
+
+          <Route path="/register" exact>
+            <Header />
+            <Register />
+          </Route>
+
           <Route path="/content-page/:param" exact>
             <ContentPage />
           </Route>
+
           <Route path="/learninschool" exact>
             <>
               <Header />

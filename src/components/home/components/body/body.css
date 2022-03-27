@@ -4,14 +4,14 @@
    /* height: 40vw; */
    overflow: hidden;
    display: flex;
-   background-image: url('../../asserts/background.jpg');
+   background-image: url('../../../../asset-img/background.jpg');
 }
 
 .body-text {
    position: relative;
    left: 6rem;
    top: 5rem;
-   width: 40%;
+   width: 46%;
    display: flex;
    flex-direction: column;
 }
@@ -46,7 +46,7 @@
    position: relative;
    top: -20px;
    left: 30px;
-   background-image: url('../../asserts/arrow.svg');
+   background-image: url('../../../../asset-img/arrow.svg');
 }
 
 .big-btn {
@@ -77,7 +77,7 @@
    width: 26px;
    left: 10%;
    height: 30px;
-   background-image: url('../../asserts/traingle1.svg');
+   background-image: url('../../../../asset-img/traingle1.svg');
 }
 
 .triangle2 {
@@ -86,7 +86,7 @@
    top: 50%;
    right: -6%;
    height: 30px;
-   background-image: url('../../asserts/traingle2.svg');
+   background-image: url('../../../../asset-img/traingle2.svg');
 }
 
 .rectangle {
@@ -94,7 +94,7 @@
    height: 8px;
    position: relative;
    left: 10%;
-   background-image: url('../../asserts/rectangle.svg');
+   background-image: url('../../../../asset-img/rectangle.svg');
 }
 
 .triangle3 {
@@ -103,7 +103,7 @@
    position: relative;
    top: 60%;
    left: 16%;
-   background-image: url('../../asserts/traingle3.svg');
+   background-image: url('../../../../asset-img/traingle3.svg');
 }
 
 .triangle4 {
@@ -112,16 +112,20 @@
    top: 80%;
    left: 16%;
    height: 30px;
-   background-image: url('../../asserts/traingle4.svg');
+   background-image: url('../../../../asset-img/traingle4.svg');
 }
 
 .arrow1 {
-   width: 15vw;
-   height: 20vh;
+   width: 1000vw;
+   height: 10vh;
+   top: 10%;
    position: relative;
    right: -3%;
-   background-image: url('../../asserts/arrow2.svg');
+   background-image: url('../../../../asset-img/arrow2.svg');
 }
+
+
+/* Responsive code */
 
 @media screen and (min-width:2200px) {
    .body {
@@ -166,7 +170,7 @@
       width: 26px;
       left: 10%;
       height: 30px;
-      background-image: url('../../asserts/traingle1.svg');
+      background-image: url('../../../../asset-img/traingle1.svg');
    }
 
    .triangle2 {
@@ -175,7 +179,7 @@
       top: 50%;
       right: -6%;
       height: 30px;
-      background-image: url('../../asserts/traingle2.svg');
+      background-image: url('../../../../asset-img/traingle2.svg');
    }
 
    .rectangle {
@@ -183,7 +187,7 @@
       height: 8px;
       position: relative;
       left: 10%;
-      background-image: url('../../asserts/rectangle.svg');
+      background-image: url('../../../../asset-img/rectangle.svg');
    }
 
    .triangle3 {
@@ -192,7 +196,7 @@
       position: relative;
       top: 60%;
       left: 16%;
-      background-image: url('../../asserts/traingle3.svg');
+      background-image: url('../../../../asset-img/traingle3.svg');
    }
 
    .triangle4 {
@@ -201,7 +205,7 @@
       top: 80%;
       left: 16%;
       height: 30px;
-      background-image: url('../../asserts/traingle4.svg');
+      background-image: url('../../../../asset-img/traingle4.svg');
    }
 
    .arrow1 {
@@ -209,14 +213,14 @@
       height: 20vh;
       position: relative;
       right: -3%;
-      background-image: url('../../asserts/arrow2.svg');
+      background-image: url('../../../../asset-img/arrow2.svg');
    }
 }
 
 @media screen and (min-width:1400px) and (max-width:2200px) {
    .body {
       width: 100%;
-      height: 80vh;
+      height: 8   0vh;
    }
 
    .body-text>h1 {
@@ -228,23 +232,30 @@
       width: 80%;
       font-size: 1.6rem;
       line-height: normal;
+      margin-top: 20px;
    }
 
    .arrow {
-      width: 130px;
-      height: 100px;
-      top: 0px;
-      left: 30px;
+      width: 200px;
+      height: 160px;
+      top: 10px;
+      left: 60px;
    }
 
    .big-btn {
-      font-weight: 600;
-      font-size: 1.6rem;
+      margin-top: 20px;
+      /* margin-top: 20px; */
+      padding: 10px 30px;
+      /* padding: 5px 10px; */
+      /* font-size: 12px; */
+      font-size: 20px;
+      width: fit-content;
+      border-radius: 5px;
    }
 
    .child-image {
       width: 40%;
-      top: 0px;
+      top: -30px;
       position: relative;
       left: 5vw;
    }
@@ -255,7 +266,7 @@
       width: 26px;
       left: 10%;
       height: 30px;
-      background-image: url('../../asserts/traingle1.svg');
+      background-image: url('../../../../asset-img/traingle1.svg');
    }
 
    .triangle2 {
@@ -264,7 +275,7 @@
       top: 50%;
       right: -6%;
       height: 30px;
-      background-image: url('../../asserts/traingle2.svg');
+      background-image: url('../../../../asset-img/traingle2.svg');
    }
 
    .rectangle {
@@ -272,7 +283,7 @@
       height: 8px;
       position: relative;
       left: 10%;
-      background-image: url('../../asserts/rectangle.svg');
+      background-image: url('../../../../asset-img/rectangle.svg');
    }
 
    .triangle3 {
@@ -281,7 +292,7 @@
       position: relative;
       top: 60%;
       left: 16%;
-      background-image: url('../../asserts/traingle3.svg');
+      background-image: url('../../../../asset-img/traingle3.svg');
    }
 
    .triangle4 {
@@ -290,7 +301,7 @@
       top: 80%;
       left: 16%;
       height: 30px;
-      background-image: url('../../asserts/traingle4.svg');
+      background-image: url('../../../../asset-img/traingle4.svg');
    }
 
    .arrow1 {
@@ -298,7 +309,7 @@
       height: 20vh;
       position: relative;
       right: -3%;
-      background-image: url('../../asserts/arrow2.svg');
+      background-image: url('../../../../asset-img/arrow2.svg');
    }
 }
 
@@ -309,7 +320,7 @@
       /* padding-bottom: 20px; */
       /* height: 50vh; */
       height: fit-content;
-      /* height: 40vh; */
+      height: 45vh;
       background-size: 100% 60%;
    }
 
@@ -432,11 +443,344 @@
    }
 } */
 
-/* for ipad */
 
-@media screen and (min-width:760px) and (max-width:1200px) {
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
    .body {
-      height: 50vh;
+      height: 40vh;
+   }
+
+   .body-text {
+      left: 2rem;
+      top: 3rem;
+      width: 50%;
+   }
+
+   .body-text>h1 {
+      font-size: 50px;
+      line-height: normal;
+   }
+
+
+   .body-text p {
+      width: 80%;
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: normal;
+   }
+
+   .arrow {
+      width: 220px;
+      height: 160px;
+      top: 15px;
+      left: 80px;
+   }
+
+   .big-btn {
+      margin-top: 30px;
+      padding: 10px 50px;
+      width: fit-content;
+      font-size: 25px;
+      border-radius: 5px;
+   }
+
+   .child-image {
+      width: 40%;
+      top: 0;
+      left: 5vw;
+      /* left: 5vw; */
+   }
+
+   .triangle1 {
+      top: 45%;
+      width: 14px;
+      height: 14px;
+      left: 10%;
+      height: 20px;
+   }
+
+   .triangle2 {
+      width: 15px;
+      top: 55%;
+      right: -6%;
+      height: 15px;
+   }
+
+   .rectangle {
+      width: 13px;
+      height: 8px;
+      left: 10%;
+   }
+
+   .triangle3 {
+      width: 15px;
+      height: 15px;
+      top: 60%;
+      left: 0%;
+   }
+
+   .triangle4 {
+      width: 15px;
+      top: 80%;
+      left: 0%;
+      height: 15px;
+   }
+
+   .arrow1 {
+      width: 10vw;
+      height: 6vh;
+      right: 0;
+   }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+   .body {
+      overflow: hidden;
+      padding-bottom: 60px;
+      height: fit-content;
+      background-size: 100% 60%;
+   }
+
+   .body-text {
+      left: 1.5rem;
+      top: 1rem;
+      width: 50rem;
+   }
+
+   .body-text-h1 {
+      /* font-size: 18px; */
+      font-size: 13px;
+   }
+
+   .body-text>h1 {
+      /* font-size: 18px; */
+      font-size: 13px;
+      line-height: normal;
+   }
+
+   .body-text p {
+      width: 90%;
+      margin-top: 6px;
+      /* margin-top: 10px; */
+      /* font-size: 12px; */
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      line-height: normal;
+   }
+
+   .arrow {
+      /* width: 50px; */
+      width: 50px;
+      /* height: 80px; */
+      height: 30px;
+      /* top: -10px; */
+      top: 8px;
+      left: 25px;
+   }
+
+   .big-btn {
+      margin-top: 10px;
+      /* margin-top: 20px; */
+      padding: 8px 25px;
+      /* padding: 5px 10px; */
+      /* font-size: 12px; */
+      font-size: 11px;
+      width: fit-content;
+      border-radius: 5px;
+   }
+
+   .child-image {
+      width: 60rem;
+      /* width: 53rem; */
+      /* top: -10vh; */
+      /* top: -2.4rem; */
+      top: 0.5em;
+      left: 5vw;
+      margin-top: 1rem;
+   }
+
+   .triangle1 {
+      top: 5em;
+      margin: 2px;
+
+      /* top: 30%; */
+      width: 26px;
+      left: 10%;
+      height: 30px;
+   }
+
+   .triangle2 {
+      width: 26px;
+      top: 6em;
+      /* left: 5em; */
+      /* top: 30%; */
+      right: 0%;
+      margin: 2px;
+
+      height: 30px;
+   }
+
+   .rectangle {
+      width: 13px;
+      height: 8px;
+      left: 3%;
+   }
+
+   .triangle3 {
+      width: 26px;
+      height: 30px;
+      /* top: 40%; */
+      top: 4em;
+      left: -1em;
+      margin: 2px;
+   }
+
+   .triangle4 {
+      width: 26px;
+      margin: 2px;
+
+      /* top: 45%; */
+      top: 7em;
+      left: 3em;
+      height: 30px;
+   }
+
+   .arrow1 {
+      width: 60vw;
+      /* width: 25vw; */
+      height: 30vh;
+      /* height/: 25vh; */
+      right: 2%;
+      margin-top:-15%;
+   }
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
+   .body {
+      overflow: hidden;
+      padding-bottom: 60px;
+      height: fit-content;
+      background-size: 100% 60%;
+   }
+
+   .body-text {
+      left: 1.5rem;
+      top: 1rem;
+      width: 50rem;
+   }
+
+   .body-text-h1 {
+      /* font-size: 18px; */
+      font-size: 18px;
+   }
+
+   .body-text>h1 {
+      /* font-size: 18px; */
+      font-size: 13px;
+      line-height: normal;
+   }
+
+   .body-text p {
+      width: 90%;
+      margin-top: 6px;
+      /* margin-top: 10px; */
+      /* font-size: 12px; */
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      line-height: normal;
+   }
+
+   .arrow {
+      /* width: 50px; */
+      width: 80px;
+      /* height: 80px; */
+      height: 60px;
+      /* top: -10px; */
+      top: 8px;
+      left: 40px;
+   }
+
+   .big-btn {
+      margin-top: 25px;
+      /* margin-top: 20px; */
+      padding: 8px 30px;
+      /* padding: 5px 10px; */
+      /* font-size: 12px; */
+      font-size: 11px;
+      width: fit-content;
+      border-radius: 5px;
+   }
+
+   .child-image {
+      width: 60rem;
+      /* width: 53rem; */
+      /* top: -10vh; */
+      /* top: -2.4rem; */
+      top: 0.5em;
+      left: 5vw;
+      margin-top: 1rem;
+   }
+
+   .triangle1 {
+      top: 5em;
+      margin: 2px;
+
+      /* top: 30%; */
+      width: 26px;
+      left: 10%;
+      height: 30px;
+   }
+
+   .triangle2 {
+      width: 26px;
+      top: 6em;
+      /* left: 5em; */
+      /* top: 30%; */
+      right: 0%;
+      margin: 2px;
+
+      height: 30px;
+   }
+
+   .rectangle {
+      width: 13px;
+      height: 8px;
+      left: 3%;
+   }
+
+   .triangle3 {
+      width: 26px;
+      height: 30px;
+      /* top: 40%; */
+      top: 4em;
+      left: -1em;
+      margin: 2px;
+   }
+
+   .triangle4 {
+      width: 26px;
+      margin: 2px;
+
+      /* top: 45%; */
+      top: 7em;
+      left: 3em;
+      height: 30px;
+   }
+
+   .arrow1 {
+      width: 50vw;
+      /* width: 25vw; */
+      height: 30vh;
+      /* height/: 25vh; */
+      right: 2%;
+      margin-top:-15%;
+   }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+   .body {
+      height: 38vh;
    }
 
    .body-text {
@@ -446,29 +790,29 @@
    }
 
    .body-text>h1 {
-      font-size: 30px;
+      font-size: 40px;
       line-height: normal;
    }
 
 
    .body-text p {
-      width: 70%;
-      margin-top: 20px;
+      width: 80%;
+      margin-top: 40px;
       font-weight: 500;
       font-size: 12px;
       line-height: normal;
    }
 
    .arrow {
-      width: 90px;
-      height: 60px;
-      top: 0px;
-      left: 10px;
+      width: 100px;
+      height: 80px;
+      top: 30px;
+      left: 60px;
    }
 
    .big-btn {
-      margin-top: 20px;
-      padding: 7px 16px;
+      margin-top: 40px;
+      padding: 8px 40px;
       width: fit-content;
       font-size: 13px;
       border-radius: 5px;

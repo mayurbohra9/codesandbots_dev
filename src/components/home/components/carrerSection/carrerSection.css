@@ -1,3 +1,5 @@
+/* carrer Guidance section */
+
 .c-sec-body {
   margin-left: 50px;
   margin-right: 50px;
@@ -12,51 +14,143 @@
 }
 
 .c-text h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700,bold;
   font-size: 40px;
+  margin-bottom:100px;
+  padding-right: 50px;
 }
 
 .c-content {
-  width: 40%;
-  padding: 10px;
-  padding-right: 100px;
+  width: 35%;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .c-text p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
-  /* font-size: 15px; */
-  margin-top: 10px;
+  font-size: 10px;
+  padding-right: 50px;
   color: #3f3f3f;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.dottedarrow{
+  position:absolute;
+  width: 649px;
+  height: 181px;
+  right: 8px;
+  top: 230%;
+  background-image: url("../../../../asset-img/dottedline.svg");
 }
 
 .c-video {
+  position: absolute;
   cursor: pointer;
   /* width: 200px; */
-  width: 60%;
-  height: 350px;
-  background-image: url("../../asserts/video.svg");
+  width: 58%;
+  right: 10px;
+  /* height: 350px; */
+  background-image: url("../../../../asset-img/video.svg");
 }
+
+/* what kids gain section */
+
+.kg-body{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 41px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.kg-upper {  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding: 20px 0px;
+}
+
+.kg-upper h2{
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  margin-left:40%;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.kg-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kg-lower-text {
+  display: flex;
+  width: 100%;
+  margin-left: 2%;
+  flex-wrap: wrap;
+}
+
+.kg-lower-card {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kg-lower-card-image {
+  z-index: 9999;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.kg-lower-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kg-lower-card-text h2 {
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #592969;
+}
+
 
 .signup {
   cursor: pointer;
   background-color: #5a2969;
-  border-radius: 5px;
+  border-radius: 20px;
   color: white;
-  margin-top: 20px;
+  margin:30px 10px;
   font-size: 20px;
   text-align: center;
-  padding: 9px 10px;
+  padding: 10px 40px;
   font-weight: 600;
-  width: 100px;
-  border: 1px solid gray;
+  width:100%;
+  margin-left: 400%;
+  /* border: 1px solid gray; */
 }
 
 @media screen and (min-width: 2500px) {
@@ -109,7 +203,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (min-width:280px) and (max-width: 760px) {
   .c-sec-body {
     padding: 10px;
     flex-direction: column;
@@ -147,6 +241,12 @@
 
   .signup {
     display: none;
+  }
+
+  /* kids gain */
+
+  .kg-lower-card{
+    padding: 0% !important;
   }
 }
 

@@ -5,42 +5,43 @@
   background-repeat: no-repeat;
 }
 
-.app {
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-}
-.app_modal {
-  opacity: 0.1;
-}
-.home_body {
-  background-color: #8b8b8b;
-  opacity: 0.88;
-}
-
-.heading {
+.heading1 {
   margin-top: 50px;
   position: relative;
-  /* left: 92px; */
+  padding: 0px 10px 0px 10px;
   left: 50px;
-  height: 73px;
+  height: 130px;
   width: max-content;
   display: flex;
-  color: #5a2969;
+  color: white;
   justify-content: flex-start;
   align-items: flex-end;
   margin-bottom: 20px;
-  background-image: url("./asserts/heading-background.svg");
+  background-image: url("../../asset-img/images/Vcloud.svg");
 }
 
-.heading h3 {
+.heading2 {
+  margin-top: 50px;
+  position: relative;
+  padding: 0px 40px 0px 40px;
+  left: 50px;
+  height: 130px;
+  width: max-content;
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-image: url("../../asset-img/images/Vcloud.svg");
+}
+
+.heading1 h3 ,.heading2 h3{ 
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  padding: 13px;
+  margin-bottom: 40px;
   line-height: 24px;
-  padding-top: 25px;
   letter-spacing: 0.025em;
 }
 

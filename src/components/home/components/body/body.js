@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 import "./body.css";
-import child from "../../asserts/kidpx.svg";
+import child from "../../../../asset-img/kidpx.svg";
 
 export default function Body() {
   let history = useHistory();

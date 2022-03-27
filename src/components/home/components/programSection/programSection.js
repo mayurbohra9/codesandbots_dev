@@ -1,14 +1,14 @@
 import React from "react";
-import "./programSection.css";
-import robotic from "../../asserts/robotics.svg";
-import coding from "../../asserts/coding.svg";
-import iot from "../../asserts/iot.svg";
-import rubic from "../../asserts/rubic-cubes.svg";
 import { useHistory } from "react-router";
-import girl from "../../asserts/program-girl.svg";
+import "./programSection.css";
+import robotic from "../../../../asset-img/images/Robotics.png";
+import coding from "../../../../asset-img/images/Coding.png";
+import iot from "../../../../asset-img/images/IOT.png";
+import rubic from "../../../../asset-img/images/Rubics Cube.png";
+
 
 export default function ProgramSection() {
-  function LowerCard(name, para, image, last) {
+  function LowerCard(name, image) {
     let history = useHistory();
 
     const handleCoursepage = (name) => {
@@ -25,13 +25,10 @@ export default function ProgramSection() {
         <div className="content">
           <div className="lc-text">
             <h3>{name}</h3>
-            <p>{para}</p>
             <div className="learnbtn" onClick={() => handleCoursepage(name)}>
-              Learn More
+              Explore
             </div>
-            {/* <div className="learnbtn" onClick={() => { history.push(`${localStorage.getItem('Token') ? `/content-page/${name}` : '/sign-in'}`) }}>Learn More</div> */}
           </div>
-          {last ? null : <div className="image line-lower-card"></div>}
         </div>
       </div>
     );
@@ -40,45 +37,32 @@ export default function ProgramSection() {
     <div className="program-sec">
       <div className="ps-upper">
         <div className="ps-upper-text">
-          <h2>Programs</h2>
+          <h2>What we provide you?</h2>
           <p>
-            Our programs are designed to develop children and bring out their
-            talents for amazing future.
+            We give your child a live one on one interactive learning experience
           </p>
         </div>
-        <div className="image line-lower-card"></div>
-        <div
-          className="image ps-upper-image"
-          style={{ backgroundImage: `url('${girl}')` }}
-        >
-          {/* <div className="image ps-inside-image"></div> */}
-        </div>
-        <div className="image line-lower-card onlymobile"></div>
+
       </div>
       <div className="ps-lower">
         {LowerCard(
           "Robotics",
-          "We take students from zero knowledge and we help the students to build a deep understanding of real world robotics.",
-          robotic,
-          0
+          robotic
         )}
+        
+        {LowerCard(
+          "IOT",         
+          iot
+        )}
+        
         {LowerCard(
           "Coding",
-          "When children learn to code, it helps them to develop essential skills such as problem solving, logical and critical thinking.",
-          coding,
-          0
+          coding        
         )}
+
         {LowerCard(
-          "IOT",
-          "Kids today can learn fast faster than ever before iot can create information about the connected objects,  analyse it, and make decisions.",
-          iot,
-          0
-        )}
-        {LowerCard(
-          "Rubik's Cubes",
-          "Rubik's cubes can be learned by kids. It also helps them in improving their reflexes, keeping the mind active and becoming problem solvers.",
-          rubic,
-          1
+          "Rubics Cube",
+          rubic
         )}
       </div>
     </div>
