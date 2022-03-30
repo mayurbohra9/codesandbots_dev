@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import pic from './iot.jpg';
+import pic from './images/oit_cp.png';
 import { Link } from 'react-router-dom';
 
 const Home3 = () => {

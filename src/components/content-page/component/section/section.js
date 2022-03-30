@@ -1,10 +1,10 @@
 import React, { Component, useEffect, useState } from "react";
 import Card from "../similarCourseCard/similarCourseCard";
 import "./section.css";
-import robotics from "../images/robotics.jpg";
-import coding from "../images/coding.jpeg";
-import rubic_cube from "../images/rubic cube.jpg";
-import Iot from "../images/iot.jpg";
+import robotics from "../images/robotics_cp.png";
+import coding from "../images/coding_cp.png";
+import rubic_cube from "../images/rubics_cp.png";
+import Iot from "../images/iot_cp.png";
 
 export default function Section({ image, name, description }) {
   let courses = ["iot", "coding", "rubik's cubes", "robotics", "vedic maths"];
@@ -14,14 +14,14 @@ export default function Section({ image, name, description }) {
     let current_course = name.toLowerCase();
     courses.forEach((element) => {
       let elem = element.toLowerCase();
-      if (elem == current_course) {
+      if (elem === current_course) {
         // continue;
       } else {
         let img;
-        if (elem == "robotics") img = robotics;
-        else if (elem == "iot") img = Iot;
-        else if (elem == "coding") img = coding;
-        else if (elem == "rubix cubes" || elem == "rubik's cubes") img = rubic_cube;
+        if (elem === "robotics") img = robotics;
+        else if (elem === "iot") img = Iot;
+        else if (elem === "coding") img = coding;
+        else if (elem === "rubix cubes" || elem === "rubik's cubes") img = rubic_cube;
         else {
           img = null;
         }

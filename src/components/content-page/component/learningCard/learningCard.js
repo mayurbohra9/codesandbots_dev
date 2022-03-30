@@ -23,19 +23,19 @@ export default function LearningCard({ content }) {
             <div className="learningCard-heading">
                <h2>{heading}</h2>
                <div className="learnc-heading-right">
-                  {topics?.length == 0 ? null : <p>{topics?.length + ' topics'}</p>}
-                  <KeyboardArrowDownIcon onClick={() => onClick(id)} className="learning-icon" fontSize="large"></KeyboardArrowDownIcon>
+                  {topics?.length === 0 ? null : <p>{topics?.length + ' topics'}</p>}
+                  <KeyboardArrowDownIcon onClick={() => onClick(id)} className="learning-icon" fontSize="large"></KeyboardArrowDownIcon> 
                   {/* <KeyboardArrowDownIcon onClick={() => onClick(id)} className="icon" fontSize="large"></KeyboardArrowDownIcon> */}
                </div>
             </div>
             <div id={id} className="learningCardBody">
-               {topics?.length == 0 ? null : topics?.map((elem, i) => <div className="learningCardTopic">
+               {topics?.length === 0 ? null : topics?.map((elem, i) => <div className="learningCardTopic">
                   <div className="yellowdot"></div>
-                  {/* <div className={`${i === topics.length - 1 ? ' yellow-line last-yellow-line' : 'yellow-line'}`}></div> */}
+                  {/* <div className={`${i ==== topics.length - 1 ? ' yellow-line last-yellow-line' : 'yellow-line'}`}></div> */}
                   <p>{elem}</p>
                </div>)}
                {
-                  para?.length == 0 ? null : para?.map(elem => <div className="learningCardTopic">
+                  para?.length === 0 ? null : para?.map(elem => <div className="learningCardTopic">
                      <p>{elem}</p>
                   </div>)
                }

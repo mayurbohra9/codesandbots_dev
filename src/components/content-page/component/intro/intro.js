@@ -7,7 +7,7 @@ export default function Intro({ heading, videoLink }) {
       var video = document.getElementById("video");
       if (!localStorage.getItem("Token")) {
          video.pause();
-         history.push('/sign-in')
+         // history.push('/sign-in')
       }
    }
    return (

@@ -32,6 +32,9 @@ function Footer() {
             Haryana <br></br>
             India{" "}
           </div>
+          <div className="address foot-no">
+            Contact : +91-7976391232
+          </div>
           <div className="address foot-email">
             Email: e-businessinnovator@avipl.in
           </div>

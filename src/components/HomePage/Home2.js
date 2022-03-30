@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import pic from './Coding-cuate (1) 1.png'
+import pic from './images/coding_cp.png';
 import { Link } from 'react-router-dom';
 
 const Home2 = () => {

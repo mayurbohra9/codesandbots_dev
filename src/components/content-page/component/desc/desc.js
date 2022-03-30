@@ -3,7 +3,7 @@ import StarIcon from '@mui/icons-material/Star';
 import "./desc.css"
 export default function Desc({ content, ContentPageTopic, rating }) {
    let stars = [];
-   for (let index = 0; index < Math.floor(rating); index++) {
+   for (let index = 0; index <= Math.floor(rating); index++) {
       stars.push(
          <StarIcon />
       )
@@ -13,7 +13,7 @@ export default function Desc({ content, ContentPageTopic, rating }) {
          <div className="desc-heading">
             <h1>{ContentPageTopic}</h1>
             <div className="rating">
-               <p>{rating}</p>
+               {/* <p>{rating}</p> */}
                <div className="star">{
                   stars.map(elem => elem)
                }

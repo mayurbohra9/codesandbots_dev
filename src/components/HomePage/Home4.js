@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import pic from './rubixc.jpg';
+import pic from './images/rubics_cp.png';
 import { Link } from 'react-router-dom';
 
 const Home4 = () => {

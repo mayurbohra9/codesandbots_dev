@@ -133,6 +133,10 @@ header {
    /* background-color: #f2f4fa; */
  }
 
+ .dropdown-content .items{
+    z-index: 10 !important;
+ }
+
  
  /* .dropdown-content{
    color: white !important;
@@ -141,6 +145,7 @@ header {
    display: block;
  } */
 
+ 
  .learnbtn div {
    border-radius: 1% !important;
    background-color: #5A2969;

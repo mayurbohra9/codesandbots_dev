@@ -78,6 +78,7 @@
 .footer_socialmedia_icons {
     display: flex;
     margin-left: -20px;
+    margin-top: 60px;
 }
 
 .footer_socialmedia_icon {

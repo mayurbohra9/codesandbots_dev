@@ -3,8 +3,8 @@
    display: flex;
    flex-direction: column;
    position: relative;
-   margin-bottom: 20px;
-   margin-top: 30px;
+   margin-bottom: 100px;
+   margin-top: 60px;
    left: 20px;
 }
 
@@ -32,7 +32,9 @@
    font-size: 19px;
    font-weight: 500;
    margin-top: 10px;
+   margin-bottom: 50px;
    letter-spacing: 0.1px;
+
 }
 
 .what-build-video {
@@ -55,6 +57,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   margin-top: 50px;
 }
 
 .what-build-similar-courses h1 {
@@ -67,10 +70,11 @@
 }
 
 .what-build-cards {
+   margin-top: 40px;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   padding-bottom: 50px;
+   padding-bottom: 10px;
 }
 
 @media (max-width:760px) {

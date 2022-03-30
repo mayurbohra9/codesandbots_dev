@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../header/header.css";
 import logo from "../../asset-img/codesandbots logo.svg";
+// import SearchIcon from "@mui/icons-material/Search";
 import { NavLink, useHistory } from "react-router-dom";
 // import { Logout } from "@mui/icons-material";
 // import { axioss } from "../api/api";
@@ -60,6 +61,11 @@ export default function Header({ dropdown, setdropdown }) {
         className="logo image"
         style={{ backgroundImage: `url('${logo}')` }}
       ></div>
+
+      {/* <div className="header-search-head">
+            <input type="search" placeholder="What you want to do today? " />
+            <SearchIcon className="search-icon" />
+      </div> */}
       <div
         className="image menu-logo"
         onClick={() => {
@@ -96,7 +102,8 @@ export default function Header({ dropdown, setdropdown }) {
               {LowerCard("IOT")}
               {LowerCard("Coding")}
               {LowerCard("Robotics")}
-              {LowerCard("Rubics Cube")}</div>
+              <div className="items">{LowerCard("Rubics Cube")}</div>
+              </div>
           </div>
           </NavLink>
 

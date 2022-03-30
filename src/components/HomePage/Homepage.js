@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './App.css';
-import pic from './Robotics-amico 1.png';
+import pic from './images/robotics_cp.png';
 
 const Homepage = () => {
     return (<div>
