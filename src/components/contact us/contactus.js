@@ -1,5 +1,5 @@
 import React from "react";
-import "../footer/footer.css";
+import "../contact us/contactus.css";
 // import { NavLink } from "react-router-dom";
 import { useHistory } from "react-router";
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom';
@@ -18,7 +18,7 @@ function Footer() {
   console.log(history);
   return (
     <>
-      <div className="footer">
+      <div className="footer f1">
         <div className="footer_left">
           <div className="footer_logo">
             <img src={logo} alt="" />
@@ -39,14 +39,12 @@ function Footer() {
         <div className="footer_mid">
           <div className="footer_options">
             <NavLink
-             onClick={() => window.location.reload()}
-             to={"/*"}
+              to="/*"
               className="footer_option"
             >Home
             </NavLink>
             
-            <NavLink onClick={() => window.location.reload()}
-            to={"/*"} className="footer_option">Courses
+            <NavLink to="/*" className="footer_option">Courses
             </NavLink>
 
             

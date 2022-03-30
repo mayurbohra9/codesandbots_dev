@@ -3,7 +3,8 @@ import "../header/header.css";
 import logo from "../../asset-img/codesandbots logo.svg";
 import { NavLink, useHistory } from "react-router-dom";
 // import { Logout } from "@mui/icons-material";
-import { axioss } from "../api/api";
+// import { axioss } from "../api/api";
+// import { Dropdown } from 'react-bootstrap';
 
 export default function Header({ dropdown, setdropdown }) {
   let h = useHistory();
@@ -21,15 +22,15 @@ export default function Header({ dropdown, setdropdown }) {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
-  const Logout = () => {
-    axioss({ method: 'post', url: '/logout' }).then((res) => {
-      localStorage.clear();
-      h.push('/');
-      window.location.reload();
-    }).catch((Err) => {
-      // console.log(Err);
-    })
-  }
+  // const Logout = () => {
+  //   axioss({ method: 'post', url: '/logout' }).then((res) => {
+  //     localStorage.clear();
+  //     h.push('/');
+  //     window.location.reload();
+  //   }).catch((Err) => {
+  //     // console.log(Err);
+  //   })
+  // }
   function OnClick() {
     var drop = document.getElementById("header_right");
     if (drop.className === "header_right") {
@@ -68,8 +69,7 @@ export default function Header({ dropdown, setdropdown }) {
       <div id="header_right" className="header_right">
         <div className="header_options">
           <NavLink
-            onClick={() => window.location.reload()}
-            to={"/home"}
+            to={"/"}
             className="header_link header_none"
           >
             <h3>Home</h3>
@@ -84,13 +84,12 @@ export default function Header({ dropdown, setdropdown }) {
             <h3>About</h3>
           </NavLink> */}
 
-<NavLink
-            onClick={() => window.location.reload()}
-            to={"/home"}
+        <NavLink
+            to={""}
             className="header_link header_none"
           >
       
-          <div class="dropdown">
+          <div class="dropdown">  
             <button class="dropbtn"><h3>Courses</h3></button>
             <div class="dropdown-content">
               {/* <div><a href="#">IOT</a></div> */}
@@ -99,12 +98,11 @@ export default function Header({ dropdown, setdropdown }) {
               {LowerCard("Robotics")}
               {LowerCard("Rubics Cube")}</div>
           </div>
-            
           </NavLink>
 
-          <NavLink
-            onClick={() => window.location.reload()}
-            to={"/home"}
+          
+
+          <NavLink to={"/contactus"}
             className="header_link header_none"
           >
             <h3>Contact Us</h3>

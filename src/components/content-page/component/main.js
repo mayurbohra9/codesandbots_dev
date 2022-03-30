@@ -4,6 +4,7 @@ import Desc from "./desc/desc";
 import LearningCard from "./learningCard/learningCard";
 import "./main.css";
 import Section from "./section/section";
+import RSB from "../../RstickyBtn/RstickyBtn";
 
 export default function Main({ heading1, heading2, heading3, imageLink, ContentPageTopic, courseRating }) {
   return (
@@ -15,6 +16,7 @@ export default function Main({ heading1, heading2, heading3, imageLink, ContentP
         name={ContentPageTopic}
         description={heading3?.h3[0]}
       />
+      <RSB />
     </div>
   );
 }

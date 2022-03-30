@@ -71,15 +71,15 @@ export default function Header({ dropdown, setdropdown }) {
             <h3>Shop</h3>
           </NavLink>
         </div>
-        <Avatar
+        {/* <Avatar
           onClick={() => {
             setavatarDrop(!avatarDrop);
           }}
           style={{ cursor: "pointer" }}
           className="header-head-avatar"
           src={ava}
-        />
-        {avatarDrop ? (
+        /> */}
+        {/* {avatarDrop ? (
           <div className="header-avatar-dropdown">
             {localStorage.getItem("Token") ? (
               <NavLink to="/">
@@ -106,8 +106,9 @@ export default function Header({ dropdown, setdropdown }) {
               </NavLink>
             ) : null}
           </div>
-        ) : null}
+        ) : null} */}
       </div>
     </header>
   );
 }
+  

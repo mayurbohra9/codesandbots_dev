@@ -1,6 +1,6 @@
 import './App.css';
-import Header from "./component/header/header"
-import Footer from './component/footer/Footer';
+import Header from "../header/header";
+import Footer from '../footer/footer';
 import Main from './component/main';
 import { useEffect, useState } from 'react';
 import Intro from './component/intro/intro';

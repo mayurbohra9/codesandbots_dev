@@ -3,17 +3,19 @@ import "./App.css";
 import ReactGA from "react-ga";
 import { Redirect } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Product from "./components/product/product";
-import Item from "./components/buy-now/Item";
-import Login from "./components/login/login";
-import { ShippingPage } from "./components/Shipping_progress/shippingPage/ShippingPage";
-import { Navbar } from "./components/Shipping_progress/Navbar/Navbar";
+// import Product from "./components/product/product";
+// import Item from "./components/buy-now/Item";
+// import Login from "./components/login/login";
+// import { ShippingPage } from "./components/Shipping_progress/shippingPage/ShippingPage";
+// import { Navbar } from "./components/Shipping_progress/Navbar/Navbar";
 import Home from "./components/home/home";
 import Register from "./components/Register_page/Register";
 import ContentPage from "./components/content-page/App";
-import Header from "./components/content-page/component/header/header";
-import LearnInSchool from "./components/learnInSchool/LearnInSchool";
+import Header from "./components/header/header";
+import Contact from "./components/contact us/contactus";
+// import LearnInSchool from "./components/learnInSchool/LearnInSchool";
 import PrivateRoute from "./components/privateRoute/privateRoute";
 
 function initizeAnalytics() {
@@ -28,7 +30,7 @@ function App() {
       <Router>
         <Switch>
 
-          <PrivateRoute 
+          {/* <PrivateRoute 
             path="/e-commerce"
             component={(props) => {
               return (
@@ -38,9 +40,9 @@ function App() {
                 </>
               );
             }}
-          />
+          /> */}
 
-          <PrivateRoute
+          {/* <PrivateRoute
             path="/main-page"
             component={(props) => {
               return (
@@ -50,9 +52,9 @@ function App() {
                 </>
               );
             }}
-          />
+          /> */}
 
-          <PrivateRoute
+          {/* <PrivateRoute
             path="/shipping_page"
             component={(props) => {
               return (
@@ -63,18 +65,23 @@ function App() {
                 </>
               );
             }}
-          />
+          /> */}
 
           <Route path="/" exact>
             <Home />
           </Route>
+
           <Route path="/home" exact>
             <Home />
           </Route>
 
-          <Route path="/sign-in" exact>
+          <Route path="/contactus" exact>
+            <Contact />
+          </Route>
+
+          {/* <Route path="/sign-in" exact>
             <Login />
-          </Route>         
+          </Route>          */}
 
           <Route path="/register" exact>
             <Header />
@@ -85,12 +92,12 @@ function App() {
             <ContentPage />
           </Route>
 
-          <Route path="/learninschool" exact>
+          {/* <Route path="/learninschool" exact>
             <>
               <Header />
               <LearnInSchool />
             </>
-          </Route>
+          </Route> */}
 
           <PrivateRoute
             path="/content-page/:param"
