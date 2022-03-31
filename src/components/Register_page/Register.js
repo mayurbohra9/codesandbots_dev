@@ -171,22 +171,22 @@ const Register = () => {
           </div>
           <div>
             <select value={user.Subject} onChange={getuserdata} name="Subject">
-              {/* <option>Robotics</option> */}
-              <option>IOT-Alexa</option>
-              {/* <option>Rubics Cube</option> */}
-              {/* <option>Coding</option> */}
+              <option>IOT (Alexa)</option>
+              <option>Robotics (Coming Soon)</option>
+              <option>Rubics Cube (Coming Soon)</option>
+              <option>Coding (Coming Soon)</option>
             </select>
           </div>
-          <h6>*For now we are providing only <strong>Alexa (IOT)</strong> course.</h6>
+          {/* <h6>*For now we are providing only <strong>Alexa (IOT)</strong> course.</h6>
           <div>
             <select value={user.Payment} onChange={getuserdata} name="Payment">
               {/* <option>Robotics</option> */}
-              <option>Payment</option>
+              {/* <option>Payment</option> */}
               {/* <option>Rubics Cube</option> */}
               {/* <option>Coding</option> */} 
-            </select>
+            {/* </select>
           </div>
-          
+           */}
           <button onClick={handleSubmit}>Register</button>
         </form>
       </div>
