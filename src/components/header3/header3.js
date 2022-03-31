@@ -98,32 +98,22 @@ export default function Header({ dropdown, setdropdown }) {
             <h3>About</h3>
           </NavLink> */}
 
-        <NavLink
-            to={""}
+<NavLink
+            onClick={() => window.location.reload()}
+            to={"/home"}
             className="header_link header_none"
           >
       
-          <div class="dropdown">  
+          <div class="dropdown">
             <button class="dropbtn"><h3>Courses</h3></button>
             <div class="dropdown-content">
-            {LowerCard(
-                  "IOT",
-                  0
-                )}
-                {LowerCard(
-                  "Coding",
-                  0
-                )}
-                {LowerCard(
-                  "Robotics",
-                  0
-                )}
-                {LowerCard(
-                  "Rubik's Cubes",
-                  1
-                )}
-              </div>
+              {/* <div><a href="#">IOT</a></div> */}
+              {LowerCard("IOT")}
+              {LowerCard("Coding")}
+              {LowerCard("Robotics")}
+              {LowerCard("Rubik's Cubes")}</div>
           </div>
+
           </NavLink>
 
           

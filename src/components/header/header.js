@@ -52,7 +52,8 @@ export default function Header({ dropdown, setdropdown }) {
     };
 
     return(
-      <div className="learnbtn" onClick={() => handleCoursepage(name)}>{name}</div>
+      <div className="learnbtn" onClick={() => handleCoursepage(name)}>{name}
+    </div>
     );  
   }
 
@@ -99,35 +100,22 @@ export default function Header({ dropdown, setdropdown }) {
           </NavLink> */}
 
         <NavLink
-            to={""}
+            onClick={() => window.location.reload()}
+            to={"/home"}
             className="header_link header_none"
           >
       
-            <div class="dropdown">  
-              <button class="dropbtn"><h3>Courses</h3></button>
-              <div class="dropdown-content">
-                {/* <div><a href="#">IOT</a></div> */}
-                {LowerCard(
-                  "IOT",
-                  0
-                )}
-                {LowerCard(
-                  "Coding",
-                  0
-                )}
-                {LowerCard(
-                  "Robotics",
-                  0
-                )}
-                {LowerCard(
-                  "Rubik's Cubes",
-                  1
-                )}
-                </div>
-            </div>
-          </NavLink>
+          <div class="dropdown">
+            <button class="dropbtn"><h3>Courses</h3></button>
+            <div class="dropdown-content">
+              {/* <div><a href="#">IOT</a></div> */}
+              {LowerCard("IOT")}
+              {LowerCard("Coding")}
+              {LowerCard("Robotics")}
+              {LowerCard("Rubik's Cubes")}</div>
+          </div>
 
-          
+          </NavLink>
 
           <NavLink to={"/contactus"}
             className="header_link header_none"
