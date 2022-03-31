@@ -94,7 +94,7 @@
   width: calc(50px + 30vw);
   position: absolute;
   right: 0px;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 /* responsive-- media query section */

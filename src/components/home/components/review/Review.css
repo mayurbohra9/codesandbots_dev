@@ -24,9 +24,9 @@
 .r-lower-text{
     position: absolute;
     color: white;
-    font-size: 30px;
+    font-size:50px;
     right: 20%;
-    top: 730%;
+    top: 710%;
 }
 
 .bs-img{
@@ -35,7 +35,7 @@
     position: absolute;
     width: 50%;
     height: 50%;
-    top: 775%;
+    top: 750%;
     left: 15%;
 }
 
