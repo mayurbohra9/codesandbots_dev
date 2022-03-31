@@ -13,7 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/home/home";
 import Register from "./components/Register_page/Register";
 import ContentPage from "./components/content-page/App";
-import Header from "./components/header/header";
+// import Header from "./components/header/header";
+import Header3 from "./components/header3/header3"
 import Contact from "./components/contact us/contactus";
 // import LearnInSchool from "./components/learnInSchool/LearnInSchool";
 import PrivateRoute from "./components/privateRoute/privateRoute";
@@ -84,7 +85,7 @@ function App() {
           </Route>          */}
 
           <Route path="/register" exact>
-            <Header />
+            <Header3/>
             <Register />
           </Route>
 

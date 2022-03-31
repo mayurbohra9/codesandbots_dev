@@ -63,28 +63,28 @@ function Footer() {
           </div>
           <div className="footer_socialmedia_icons">
             <div className="footer_socialmedia_icon">
-              <a href={'https://www.instagram.com/'} target="_blank">
+              <a href={'https://www.instagram.com/codesandbots_/'} target="_blank">
                 <img src={instagram} alt="insta-icon" />           
               </a>                  
             </div>
             
             <div className="footer_socialmedia_icon">
-              <a href={'https://www.youtube.com/'} target="_blank">
+              <a href={'#'} target="_blank">
                 <img src={youtube} alt="youtube-icon" />
               </a>
             </div>
             <div className="footer_socialmedia_icon">
-              <a href={'https://www.linkedin.com/'} target="_blank">
+              <a href={'https://www.linkedin.com/company/codesandbots/'} target="_blank">
                 <img src={linkedin} alt="linkedin-icon" />  
               </a>
             </div>
             <div className="footer_socialmedia_icon">
-              <a href={'https://www.twitter.com/'} target="_blank">
+              <a href={'https://twitter.com/codesandbots'} target="_blank">
                 <img src={twitter} alt="twitter-icon" />
               </a>
             </div>
             <div className="footer_socialmedia_icon">
-              <a href={'https://www.facebook.com/'} target="_blank">
+              <a href={'#'} target="_blank">
                 <img src={facebook} alt="facebook-icon" />
               </a>
             </div>

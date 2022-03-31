@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../header/header.css";
+import "../header3/header3.css";
 import logo from "../../asset-img/codesandbots logo.svg";
 // import SearchIcon from "@mui/icons-material/Search";
 import { NavLink, useHistory } from "react-router-dom";
@@ -52,7 +52,8 @@ export default function Header({ dropdown, setdropdown }) {
     };
 
     return(
-      <div className="learnbtn" onClick={() => handleCoursepage(name)}>{name}</div>
+      <div className="learnbtn" onClick={() => handleCoursepage(name)}>{name}
+    </div>
     );  
   }
 
@@ -73,14 +74,13 @@ export default function Header({ dropdown, setdropdown }) {
             <input type="search" placeholder="What you want to do today? " />
             <SearchIcon className="search-icon" />
       </div> */}
-
       <div
         className="image menu-logo"
         onClick={() => {
           OnClick();
         }}
       ></div>
-      <div id="header_right" className="header_right">
+      <div id="header_right3" className="header_right3">
         <div className="header_options">
           <NavLink
             to={"/"}
@@ -103,11 +103,10 @@ export default function Header({ dropdown, setdropdown }) {
             className="header_link header_none"
           >
       
-            <div class="dropdown">  
-              <button class="dropbtn"><h3>Courses</h3></button>
-              <div class="dropdown-content">
-                {/* <div><a href="#">IOT</a></div> */}
-                {LowerCard(
+          <div class="dropdown">  
+            <button class="dropbtn"><h3>Courses</h3></button>
+            <div class="dropdown-content">
+            {LowerCard(
                   "IOT",
                   0
                 )}
@@ -123,8 +122,8 @@ export default function Header({ dropdown, setdropdown }) {
                   "Rubik's Cubes",
                   1
                 )}
-                </div>
-            </div>
+              </div>
+          </div>
           </NavLink>
 
           
@@ -146,8 +145,8 @@ export default function Header({ dropdown, setdropdown }) {
           {/* <NavLink to="/learninschool" className="header_link header_none">
             <h3>Learn In School</h3>
           </NavLink> */}
-        </div>
-        <div className="header-buttons">
+        {/* </div> */}
+        {/* <div className="header-buttons"> */}
 
           {/* <NavLink to={localStorage.getItem("Token") ? "/" : "/sign-in"} onClick={() => { if (localStorage.getItem("Token")) Logout(); }}>
             <div className="login header-btn">
@@ -162,11 +161,10 @@ export default function Header({ dropdown, setdropdown }) {
           </NavLink> */}
 
           
-          <NavLink to="/register">
+          {/* <NavLink to="/register">
             {""}
             <div className="header-btn">Register</div>
-          </NavLink>
-          
+          </NavLink> */}
           {/* <div>
           <input
             type="button"

@@ -1,99 +1,100 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+// import Popup from './Popup';
 import register_pic from "./register_pic.svg";
-import "./Register.css";
+import "./Regpopup.css";
 
-const Register = () => {
-  const history = useHistory();
+export default function Regpopup() {
 
-  const [user, setuser] = useState({
-    firstName: "",
-    lastName: "",
-    Emailid: "",
-    PhoneNo: "",
-    Address:"",
-    Subject: "IOT-Alexa",
-  });
+    const history = useHistory();
 
-  const [error, seterror] = useState({
-    userfirstName: "",
-    userlastName: "",
-    userEmailid: "",
-    userPhoneNo: "",
-    userAddress:"",
-    userSubject: "",
+    const [user, setuser] = useState({
+        firstName: "",
+        lastName: "",
+        Emailid: "",
+        PhoneNo: "",
+        Address:"",
+        Subject: "IOT-Alexa",
+      });
     
-  });
-  let name, value;
-  const getuserdata = (e) => {
-    name = e.target.name;
-    value = e.target.value;
-    setuser({ ...user, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { firstName, lastName, Emailid, PhoneNo, Subject, Address } = user;
-    // const {
-    //   userfirstName,
-    //   userlastName,
-    //   userEmailid,
-    //   userPhoneNo,
-    //   userSubject,
-    // } = error;
-    if (!firstName) {
-      error.userfirstName = "Required";
-      seterror(() => ({
-        userfirstName: error.userfirstName,
-      }));
-    } else if (firstName.length < 3) {
-      error.userfirstName = "Name must contain atleast 3 character";
-      seterror(() => ({
-        userfirstName: error.userfirstName,
-      }));
-    } else if (!lastName.trim()) {
-      error.userlastName = "Required";
-      seterror(() => ({
-        userlastName: error.userlastName,
-      }));
-    } else if (!Emailid) {
-      error.userEmailid = "Required";
-      seterror(() => ({
-        userEmailid: error.userEmailid,
-      }));
-    } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Emailid)) {
-      error.userEmailid = "Enter Valid Email Address";
-      seterror(() => ({
-        userEmailid: error.userEmailid,
-      }));
-    } else if (!PhoneNo) {
-      error.userPhoneNo = "Required";
-      seterror(() => ({
-        userPhoneNo: error.userPhoneNo,
-      }));
-    } else if (PhoneNo.length !== 10) {
-      error.userPhoneNo = "Mobile Number must contain 10 digit";
-      seterror(() => ({
-        userPhoneNo: error.userPhoneNo,
-      }));
-    } else if (!Subject) {
-      error.userSubject = "Required";
-      seterror(() => ({
-        userSubject: error.userSubject,
-      }));
-    }else if (!Address) {
-      error.userAddress = "Required";
-      seterror(() => ({
-        userAddress: error.userAddress,
-      }));
-    }else{
-      setuser((prevdata) => ({
-        ...(prevdata = null),
-      }));
-      history.push("/home");
-    }
-  };
-
+      const [error, seterror] = useState({
+        userfirstName: "",
+        userlastName: "",
+        userEmailid: "",
+        userPhoneNo: "",
+        userAddress:"",
+        userSubject: "",
+        
+      });
+      let name, value;
+      const getuserdata = (e) => {
+        name = e.target.name;
+        value = e.target.value;
+        setuser({ ...user, [name]: value });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        const { firstName, lastName, Emailid, PhoneNo, Subject, Address } = user;
+        // const {
+        //   userfirstName,
+        //   userlastName,
+        //   userEmailid,
+        //   userPhoneNo,
+        //   userSubject,
+        // } = error;
+        if (!firstName) {
+          error.userfirstName = "Required";
+          seterror(() => ({
+            userfirstName: error.userfirstName,
+          }));
+        } else if (firstName.length < 3) {
+          error.userfirstName = "Name must contain atleast 3 character";
+          seterror(() => ({
+            userfirstName: error.userfirstName,
+          }));
+        } else if (!lastName.trim()) {
+          error.userlastName = "Required";
+          seterror(() => ({
+            userlastName: error.userlastName,
+          }));
+        } else if (!Emailid) {
+          error.userEmailid = "Required";
+          seterror(() => ({
+            userEmailid: error.userEmailid,
+          }));
+        } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Emailid)) {
+          error.userEmailid = "Enter Valid Email Address";
+          seterror(() => ({
+            userEmailid: error.userEmailid,
+          }));
+        } else if (!PhoneNo) {
+          error.userPhoneNo = "Required";
+          seterror(() => ({
+            userPhoneNo: error.userPhoneNo,
+          }));
+        } else if (PhoneNo.length !== 10) {
+          error.userPhoneNo = "Mobile Number must contain 10 digit";
+          seterror(() => ({
+            userPhoneNo: error.userPhoneNo,
+          }));
+        } else if (!Subject) {
+          error.userSubject = "Required";
+          seterror(() => ({
+            userSubject: error.userSubject,
+          }));
+        }else if (!Address) {
+          error.userAddress = "Required";
+          seterror(() => ({
+            userAddress: error.userAddress,
+          }));
+        }else{
+          setuser((prevdata) => ({
+            ...(prevdata = null),
+          }));
+          history.push("/home");
+        }
+      };
   return (
     <div className="register_main">
       <h1>Register for live Class</h1>
@@ -194,7 +195,5 @@ const Register = () => {
       <div className="second_circle"></div>
       <img src={register_pic} alt="loading" className="register_image" />
     </div>
-  );
-};
-
-export default Register;
+  )
+}

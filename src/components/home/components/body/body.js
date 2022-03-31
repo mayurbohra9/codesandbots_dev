@@ -23,7 +23,7 @@ export default function Body() {
           <div
             className="big-btn"
             onClick={() => {
-              history.push("/content-page/robotics");
+              history.push("/content-page/IOT");
             }}
           >
             Explore
