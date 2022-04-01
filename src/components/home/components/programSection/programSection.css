@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
-  margin-left:22%;
+  /* margin-left: 22%; */
   padding-bottom: 20px;
 }
 
@@ -38,11 +38,9 @@
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   width: 80%;
-  color: #6B6B6B;
-  text-align: center;
-
+  color: #6b6b6b;
 }
 
 .ps-lower {
@@ -63,8 +61,8 @@
 
 .lc-img {
   z-index: 9999;
-  width: 240px;
-  height: 320px;
+  width: 15rem;
+  height: 20rem;
   margin-bottom: 20px;
 }
 
@@ -75,7 +73,7 @@
 }
 
 .lc-text h3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   margin-bottom: 10px;
@@ -83,15 +81,14 @@
   letter-spacing: -0.01em;
 }
 
-
 .learnbtn {
-  color:white;
+  color: white;
   width: auto;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #592969;;
+  background: #592969;
   padding: 12px 55px;
   border-radius: 20px;
   margin-top: 10px;
@@ -139,12 +136,14 @@
   }
 
   .ps-upper-text {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    /* padding: 10px; */
+    margin-left: 0;
+    text-align: center;
   }
 
   .ps-upper-text h2 {
@@ -177,15 +176,15 @@
   .lower-card {
     margin: 0px;
     padding: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0.5rem;
   }
 
   .lc-img {
     z-index: 9999;
-    /* width: 80px; */
-    width: 100px;
+    width: 80px;
+    width: 25rem;
     /* height: 80px; */
-    height: 100px;
+    height: 30rem;
   }
 
   .lc-text {
@@ -196,10 +195,10 @@
 
   .lc-text h3 {
     font-size: 20px;
-    overflow-y: hidden;
-    line-height: inherit;
+    font-weight: 600;
     letter-spacing: 0.025em;
     margin-bottom: 2px;
+    font-size: 30px;
   }
 
   .lc-text p {
@@ -215,9 +214,9 @@
 
   .learnbtn {
     width: fit-content;
-    padding: 2px 5px;
+    padding: 5px 8px;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .line-lower-card {
@@ -491,5 +490,11 @@
     height: 140px;
     transform: rotate(90deg);
     /* background-image: url('../../asserts/line.png'); */
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .ps-upper-text {
+    width: 100%;
   }
 }

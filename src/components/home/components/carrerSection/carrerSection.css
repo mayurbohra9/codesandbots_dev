@@ -16,9 +16,9 @@
 .c-text h2 {
   font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 700,bold;
+  font-weight: 700, bold;
   font-size: 40px;
-  margin-bottom:100px;
+  margin-bottom: 100px;
   padding-right: 50px;
 }
 
@@ -40,8 +40,8 @@
   font-size: 18px;
 }
 
-.dottedarrow{
-  position:absolute;
+.dottedarrow {
+  position: absolute;
   width: 649px;
   height: 181px;
   right: 8px;
@@ -61,7 +61,7 @@
 
 /* what kids gain section */
 
-.kg-body{
+.kg-body {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -73,7 +73,7 @@
   padding-bottom: 30px;
 }
 
-.kg-upper {  
+.kg-upper {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -81,12 +81,12 @@
   padding: 20px 0px;
 }
 
-.kg-upper h2{
+.kg-upper h2 {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
-  margin-left:40%;
+  margin-left: 40%;
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
@@ -127,7 +127,7 @@
 
 .kg-lower-card-text h2 {
   margin-bottom: 10px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -137,18 +137,17 @@
   color: #592969;
 }
 
-
 .signup {
   cursor: pointer;
   background-color: #5a2969;
   border-radius: 20px;
   color: white;
-  margin:30px 10px;
+  margin: 30px 10px;
   font-size: 20px;
   text-align: center;
   padding: 10px 40px;
   font-weight: 600;
-  width:100%;
+  width: 100%;
   margin-left: 400%;
   /* border: 1px solid gray; */
 }
@@ -203,13 +202,18 @@
   }
 }
 
-@media (min-width:280px) and (max-width: 760px) {
+@media (min-width: 280px) and (max-width: 760px) {
   .c-sec-body {
-    padding: 10px;
+    /* padding: 10px; */
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .kg-upper h2 {
+    margin-left: 0;
   }
 
   .c-text h2 {
@@ -236,17 +240,22 @@
     position: relative;
     top: 0px;
     width: 100%;
-    height: 190px;
   }
 
   .signup {
     display: none;
   }
-
+  .cs-lower-card1 {
+    width: 100%;
+    height: 200px;
+  }
+  .kg-upper {
+    align-items: center;
+  }
   /* kids gain */
 
-  .kg-lower-card{
-    padding: 0% !important;
+  .kg-lower-card {
+    padding: 10px;
   }
 }
 

@@ -1,119 +1,128 @@
 /* review section */
 
-.r-body{
-    width: 1340px;
-    height: 1000px;
-    margin-left:8%;
-    margin-bottom: 5%;
-    background: rgba(27, 44, 135, 0.7);
-    border-radius: 20px;
+.r-body {
+  width: 1340px;
+  height: 1000px;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  background: rgba(27, 44, 135, 0.7);
+  border-radius: 20px;
 }
 
-.r-upper{
-    text-align: center;
-    color: white;
-    padding: 40px;
-    font-size: 20px;
-    font-weight: bold;
+.r-upper {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.r-lower{
-    margin: 30px;
+.r-lower {
+  margin: 30px;
 }
 
-.r-lower-text{
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    right: 20%;
-    top: 730%;
+.r-lower-text {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  right: 20%;
+  top: 730%;
 }
 
-.bs-img{
-    background-image: url('../../../../asset-img/businessteam.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 775%;
-    left: 15%;
+.bs-img {
+  background-image: url("../../../../asset-img/businessteam.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 775%;
+  left: 15%;
 }
 
-.review_cards1 img{
-    border-radius: 50%;
-    width: calc(30px + 5vw);
-    height: calc(30px + 5vw);
-    position: absolute;
-    top: -15%;
+.review_cards1 img {
+  border-radius: 50%;
+  width: calc(30px + 5vw);
+  height: calc(30px + 5vw);
+  position: absolute;
+  top: -15%;
 }
 
-.review_cards2 img{
-    border-radius: 50%;
-    width: calc(30px + 5vw);
-    height: calc(30px + 5vw);
-    position: absolute;
-    top: -15%;
-}
-    
-.review_cards1{
-    background: #F8F8F8;
-    margin:0% calc(50px + 1vw);
-    padding: 50px;
-    position: relative;
-    box-shadow: 2px 2px 9px rgba(79, 79, 79, 0.25);
-    border-radius: 10px;
-    width: 50%;
-} 
-
-.review_cards2{
-    background: #F8F8F8;
-    padding: 50px;
-    position: relative;
-    box-shadow: 2px 2px 9px rgba(79, 79, 79, 0.25);
-    border-radius: 10px;
-    width: 50%;
-    margin-top: 150px;
-    margin-left: 45%;
-} 
-    
-.card_text{
-    margin-top: calc(10px + 2vw);
+.review_cards2 img {
+  border-radius: 50%;
+  width: calc(30px + 5vw);
+  height: calc(30px + 5vw);
+  position: absolute;
+  top: -15%;
 }
 
-.card_bottom{
-    display: flex;
-    justify-content: space-between;
-    margin-top: calc(10px + 2vw);
-
+.review_cards1 {
+  background: #f8f8f8;
+  margin: 0% calc(50px + 1vw);
+  padding: 50px;
+  position: relative;
+  box-shadow: 2px 2px 9px rgba(79, 79, 79, 0.25);
+  border-radius: 10px;
+  width: 50%;
 }
 
-.card_rating{
-    background: #FFEAB2;
-    padding: calc(1px + 0.3vw) calc(10px + 1vw);
-    border-radius: 30px;
-}
-.card_name{
-    font-weight: 800;
-
-}
-
-.card_rating span{
-    padding-left: calc(1px + 0.3vw);
+.review_cards2 {
+  background: #f8f8f8;
+  padding: 50px;
+  position: relative;
+  box-shadow: 2px 2px 9px rgba(79, 79, 79, 0.25);
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 150px;
+  margin-left: 45%;
 }
 
+.card_text {
+  margin-top: calc(10px + 2vw);
+}
+
+.card_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(10px + 2vw);
+}
+
+.card_rating {
+  background: #ffeab2;
+  padding: calc(1px + 0.3vw) calc(10px + 1vw);
+  border-radius: 30px;
+}
+.card_name {
+  font-weight: 800;
+}
+
+.card_rating span {
+  padding-left: calc(1px + 0.3vw);
+}
 
 /* Responsive code */
 
-@media (min-width:280px) and (max-width:760px){
+@media (min-width: 280px) and (max-width: 760px) {
+  .r-body {
+    /* width: 240px !important; */
+    width: 100%;
+    position: relative;
+  }
 
-    .r-body{
-        width: 240px !important;
-    }
-
-    .r-uppar{
-        
-    }
-
+  .r-lower-text {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 2%;
+    top: 2%;
+  }
+  .review_cards1 {
+    margin: 0 0 5rem 0;
+    width: 40rem;
+    max-width: 100%;
+  }
+  .review_cards2 {
+    margin: 0;
+    width: 40rem;
+    max-width: 100%;
+  }
 }
-    
-
