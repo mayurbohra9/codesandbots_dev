@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "./carrerSection.css";
 import critical from "../../../../asset-img/images/critical.png";
 import creative from "../../../../asset-img/images/creative.png";
@@ -79,9 +79,9 @@ export default function CareerSection() {
               </div>
           </div>
 
-          <NavLink to="/sign-up">
+          {/* <NavLink to="/sign-up">
           <div className="signup">Sign Up</div>
-          </NavLink>
+          </NavLink> */}
 
         </div>  
       </div>

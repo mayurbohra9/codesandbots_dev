@@ -52,10 +52,10 @@ function LandingPage() {
               <li>Enhances their ability to build</li>
               <li>Opens up career opportunities</li>
             </ul>
-            <NavLink to="/sign-in">
+            {/* <NavLink to="/sign-in">
               {" "}
               <button className="sign_up">Sign Up</button>
-            </NavLink>
+            </NavLink> */}
           </div>
           <div className="right_section">
             <img src={yes_pic} alt="" />

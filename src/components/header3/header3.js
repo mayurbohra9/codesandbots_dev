@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../header/header.css";
+import "../header3/header3.css";
 import logo from "../../asset-img/codesandbots logo.svg";
 // import SearchIcon from "@mui/icons-material/Search";
 import { NavLink, useHistory } from "react-router-dom";
@@ -74,14 +74,13 @@ export default function Header({ dropdown, setdropdown }) {
             <input type="search" placeholder="What you want to do today? " />
             <SearchIcon className="search-icon" />
       </div> */}
-
       <div
         className="image menu-logo"
         onClick={() => {
           OnClick();
         }}
       ></div>
-      <div id="header_right" className="header_right">
+      <div id="header_right3" className="header_right3">
         <div className="header_options">
           <NavLink
             to={"/"}
@@ -99,7 +98,7 @@ export default function Header({ dropdown, setdropdown }) {
             <h3>About</h3>
           </NavLink> */}
 
-        <NavLink
+<NavLink
             onClick={() => window.location.reload()}
             to={"/home"}
             className="header_link header_none"
@@ -116,6 +115,8 @@ export default function Header({ dropdown, setdropdown }) {
           </div>
 
           </NavLink>
+
+          
 
           <NavLink to={"/contactus"}
             className="header_link header_none"
@@ -134,8 +135,8 @@ export default function Header({ dropdown, setdropdown }) {
           {/* <NavLink to="/learninschool" className="header_link header_none">
             <h3>Learn In School</h3>
           </NavLink> */}
-        </div>
-        <div className="header-buttons">
+        {/* </div> */}
+        {/* <div className="header-buttons"> */}
 
           {/* <NavLink to={localStorage.getItem("Token") ? "/" : "/sign-in"} onClick={() => { if (localStorage.getItem("Token")) Logout(); }}>
             <div className="login header-btn">
@@ -150,11 +151,10 @@ export default function Header({ dropdown, setdropdown }) {
           </NavLink> */}
 
           
-          <NavLink to="/register">
+          {/* <NavLink to="/register">
             {""}
             <div className="header-btn">Register</div>
-          </NavLink>
-          
+          </NavLink> */}
           {/* <div>
           <input
             type="button"

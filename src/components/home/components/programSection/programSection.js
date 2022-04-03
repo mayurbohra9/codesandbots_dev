@@ -47,22 +47,26 @@ export default function ProgramSection() {
       <div className="ps-lower">
         {LowerCard(
           "Robotics",
-          robotic
+          robotic,
+          0
         )}
         
         {LowerCard(
           "IOT",         
-          iot
+          iot,
+          0
         )}
         
         {LowerCard(
           "Coding",
-          coding        
+          coding,
+          0        
         )}
 
         {LowerCard(
-          "Rubics Cube",
-          rubic
+          "Rubik's Cubes",
+          rubic,
+          1
         )}
       </div>
     </div>
